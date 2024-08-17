@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icone/uberhub.ico" type="image/x-icon">
     <title>UberHub</title>
 </head>
 <body>
@@ -11,29 +12,30 @@
     <div class="container">
         
     <nav class="navbar">
+        
         <ul>
             <li class="list active">
-                <a href="#">
+                <a onclick="HHome()" id="btnhome" class="btn" href="#">
                     <span class="icon">Home</span>
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a onclick="Startups()" id="btnStartups" class="btn" href="#">
                     <span class="icon">Startups</span>
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a onclick="Vagas()" id="btnvagas" class="btn" href="#">
                     <span class="icon">Vagas</span>
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a onclick="Eventos()" class="btn" href="#">
                     <span class="icon">Eventos</span>
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a onclick="Noticias()" class="btn" href="#">
                     <span class="icon">Notícias</span>
                 </a>
             </li>
@@ -42,37 +44,60 @@
     </nav>
 
 
+<div class="parede" id="l">
+
+</div>
 
 
-    <main class="main">
 
-        <div class="box"><a>300x300</a></div>
-        <div class="box"><a>300x300</a></div>
-        <div class="box"><a>300x300</a></div>
+    <div class="main" id="Home">
 
-        <div class="box"><a>300x300</a></div>
-        <div class="box"><a>300x300</a></div>
-        <div class="box"><a>300x300</a></div>
+            <div class="boxH"><a>300x300</a></div>
+            <div class="boxH"><a>300x300</a></div>
+            <div class="boxH"><a>300x300</a></div>
+            
+        
 
     </div>
 
-    <script>
-        const list = document.querySelectorAll('.list');
-      
+    <div class="Startups" id="Startups">
+
+        <div class="boxS"><a>300x300</a></div>
+        <div class="boxS"><a>300x300</a></div>
+        <div class="boxS"><a>300x300</a></div>
+
+        <div class="boxS"><a>300x300</a></div>
+        <div class="boxS"><a>300x300</a></div>
+        <div class="boxS"><a>300x300</a></div>
+    
+    </div>
+
+    <div class="Vagas" id="Vagas">
+
+        <div class="boxV"><a>300x300</a></div>
+        <div class="boxV"><a>300x300</a></div>
+        <div class="boxV"><a>300x300</a></div>
+
+        <div class="boxV"><a>300x300</a></div>
+        <div class="boxV"><a>300x300</a></div>
+        <div class="boxV"><a>300x300</a></div>
+    
+    </div>
 
 
-function activeLink(){
-    list.forEach((item)=>
-    item.classList.remove('active'));
-    this.classList.add('active');
-}
 
 
-list.forEach((item)=>
-item.addEventListener('click',activeLink));
+    </div>
 
 
 
-    </script>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>

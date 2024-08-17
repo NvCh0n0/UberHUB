@@ -1,0 +1,121 @@
+@media screen and (max-width: 992px) {
+    .main{
+        display: grid;
+        grid-area: main;
+        grid-template-areas: 
+            "box box"
+            "box box"
+            "box box";
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            gap: 1px;
+            height: 100vh;
+            transition: all;
+        z-index: -1;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .navbar{
+        display: flex;
+        grid-area: navbar;
+        background-color: #5600B3;
+        padding: 10px;
+        text-align: center;
+        margin: 0;
+        align-content: space-between;
+        justify-content: center;
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .main{
+        display: grid;
+        grid-area: main;
+        grid-template-areas: 
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box";
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            gap: 1px;
+            height: 100vh;
+            transition: all;
+        z-index: -1;
+    }
+}
+
+
+
+
+.box{
+    display: flex;
+    height: 200px;
+    width: 300px;
+    background-color: #5600B3;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+
+
+
+
+.parede{
+    display: none;
+    grid-area: main;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+
+.parede.openH1{
+    display: flex;
+}
+
+.parede.openH1{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Startups{
+    display: none;
+}
+
+.Startups.openStartups{
+    display: grid;
+    position: relative;
+    grid-area: main;
+    grid-template-areas:
+        "boxS boxS boxS";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 1px;
+        column-gap: 10px;
+        height: 100vh;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        top: 30px;
+}
